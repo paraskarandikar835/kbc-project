@@ -1,5 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-  font-family: Arial;
-  background: lightblue;
+  background: radial-gradient(circle, #010e2c, #000000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.kbc-container {
   text-align: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffcc00;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.question-box {
+  background: linear-gradient(90deg, #002b80, #003b99);
+  border: 3px solid #00bfff;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 25px #00bfff;
+  margin-bottom: 40px;
+}
+
+.question-box h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 0 0 8px #00bfff;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+  justify-content: center;
+}
+
+.btn {
+  background: linear-gradient(90deg, #002b80, #0047ab);
+  border: 3px solid #00bfff;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #00bfff, #1e90ff);
+  color: #000;
+  transform: scale(1.05);
+}
+
+.btn.correct {
+  background: #00ff88;
+  color: #000;
+}
+
+.btn.wrong {
+  background: #ff4c4c;
+}
+
+.next-btn {
+  margin-top: 40px;
+  padding: 12px 25px;
+  background: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #ffcc00;
+  transform: scale(1.05);
 }
